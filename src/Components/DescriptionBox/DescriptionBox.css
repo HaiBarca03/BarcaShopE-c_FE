@@ -1,0 +1,151 @@
+.descriptionbox {
+    margin: 120px 170px;
+}
+
+.descriptionbox-navigator {
+    display: flex;
+}
+
+.descriptionbox-nav-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 600;
+    width: 171px;
+    height: 70px;
+    border: 1px solid #d0d0d0;
+}
+
+.descriptionbox-nav-box.fade {
+    background: #FBFBFB;
+}
+
+.descriptionbox-description {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    border: 1px solid #D0D0D0;
+    padding: 48px;
+    padding-bottom: 70px;
+}
+
+.descriptionbox-nav-box {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.descriptionbox-nav-box.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.descriptionbox-nav-box.fade {
+    color: #888;
+}
+
+.descriptionbox-content {
+    padding: 20px;
+}
+
+.descriptionbox-description,
+.descriptionbox-reviews {
+    display: block;
+}
+
+.comment {
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+}
+
+.add-review {
+    margin-top: 20px;
+}
+
+.add-review textarea {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.add-review button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-review button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 1280px) {
+    .descriptionbox {
+        margin: 60px 30px;
+        /* Reduce margins for smaller screens */
+    }
+
+    .descriptionbox-nav-box {
+        width: 150px;
+        /* Adjust width for smaller screens */
+        height: 60px;
+        /* Adjust height for smaller screens */
+        font-size: 14px;
+        /* Adjust font size for smaller screens */
+    }
+
+    .descriptionbox-description {
+        padding: 30px;
+        /* Reduce padding for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .descriptionbox {
+        margin: 40px 15px;
+        /* Further reduce margins */
+    }
+
+    .descriptionbox-nav-box {
+        width: 100%;
+        /* Full width on small screens */
+        height: 50px;
+        /* Adjust height for very small screens */
+        font-size: 12px;
+        /* Smaller font size */
+    }
+
+    .descriptionbox-description {
+        padding: 20px;
+        /* Reduce padding */
+    }
+}
+
+@media (max-width: 480px) {
+    .descriptionbox {
+        margin: 20px 10px;
+        /* Minimal margins for very small screens */
+    }
+
+    .descriptionbox-nav-box {
+        font-size: 10px;
+        /* Adjust font size further */
+        height: 40px;
+        /* Further adjust height */
+    }
+
+    .descriptionbox-description {
+        padding: 15px;
+        /* Further reduce padding */
+    }
+}
